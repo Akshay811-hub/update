@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:      
+  build: 
+    steps:
+      - uses: liquibase-github-actions/update@v4.21.1
+        with:
+          changelogFile: changelog-root.xml
+          url: database-1-instance-1.czdqxrcnm0n5.ap-south-1.rds.amazonaws.com
+          username: postgres
+          password: Akshay123
+          headless: true
