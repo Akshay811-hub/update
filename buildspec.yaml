@@ -1,7 +1,5 @@
 version: 0.2
 phases:
-  pre_build:
-    commands:      
   build: 
     steps:
       - uses: liquibase-github-actions/update@v4.21.1
