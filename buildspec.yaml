@@ -9,7 +9,7 @@ phases:
       - uses: liquibase-github-actions/update@v4.21.1
         with:
           changelogFile: changelog-root.xml
-          url: ${{ env.URL }}
+          url: database-1-instance-1.c1jnktys7ztt.us-east-1.rds.amazonaws.com
           username: postgres
-          password: ${{ $env.PASSWORD }}
+          password: Akshay123
           headless: true
